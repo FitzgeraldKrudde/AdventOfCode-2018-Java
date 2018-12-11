@@ -11,9 +11,9 @@ import java.util.Comparator;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Day_10 {
+public class Day_11 {
 
-    private static String fileName = "input_10.txt";
+    private static String fileName = "input_11.txt";
 
     public static void main(String[] args) throws IOException {
         LocalTime start = LocalTime.now();
