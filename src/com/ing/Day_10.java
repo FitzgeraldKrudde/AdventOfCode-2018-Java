@@ -75,7 +75,7 @@ class Sky {
             return false;
         }
 
-        // find the X coordinates with a high hit on these 2 Y coordinates
+        // find the X coordinates with a high hit between these 2 Y coordinates
         // and pick the min and max x coordinate
         IntSummaryStatistics stats =
                 sky.stream()
