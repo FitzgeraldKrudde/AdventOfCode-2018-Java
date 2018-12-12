@@ -92,7 +92,6 @@ public class Day_11 {
         public SimpleEntry<Point, Integer> getBestSquareAndDimension() {
             SimpleEntry<Point, SimpleEntry<Integer, Integer>> tuplePointAndTupleDimensionAndPower = IntStream.range(1, dimension)
                     .parallel()
-                    .peek(i->System.out.println(i))
                     .mapToObj(currentDimension -> {
                         SimpleEntry<Point, Integer> tuplePointAndPower = getBestSquare(currentDimension);
                         SimpleEntry<Integer, Integer> tupleDimensionAndTotalPower = new SimpleEntry<>(currentDimension, tuplePointAndPower.getValue());
