@@ -25,7 +25,7 @@ public class Day_11 {
 
         int gridSerialNumber = Integer.parseInt(input);
         System.out.println("\ngridSerialNumber: " + gridSerialNumber);
-        FuelTank fueltank = new FuelTank(gridSerialNumber, 3000);
+        FuelTank fueltank = new FuelTank(gridSerialNumber, 300);
         Point point = fueltank.getBestSquare(3).getKey();
         System.out.println("point: " + point);
 
@@ -92,6 +92,7 @@ public class Day_11 {
         public SimpleEntry<Point, Integer> getBestSquareAndDimension() {
             SimpleEntry<Point, SimpleEntry<Integer, Integer>> tuplePointAndTupleDimensionAndPower = IntStream.range(1, dimension)
                     .parallel()
+                    .peek(i->System.out.println(i))
                     .mapToObj(currentDimension -> {
                         SimpleEntry<Point, Integer> tuplePointAndPower = getBestSquare(currentDimension);
                         SimpleEntry<Integer, Integer> tupleDimensionAndTotalPower = new SimpleEntry<>(currentDimension, tuplePointAndPower.getValue());
