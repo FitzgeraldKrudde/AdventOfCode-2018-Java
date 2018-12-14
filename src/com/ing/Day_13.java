@@ -146,30 +146,39 @@ class TrackSystem {
             case STRAIGHT_HORIZONTAL:
                 break;
             case CURVE_LEFT:
-                //TODO use switch
-                if (cart.getCurrentDirection() == LEFT) {
-                    cart.setCurrentDirection(UP);
-                } else if (cart.getCurrentDirection() == RIGHT) {
-                    cart.setCurrentDirection(DOWN);
-                } else if (cart.getCurrentDirection() == DOWN) {
-                    cart.setCurrentDirection(RIGHT);
-                } else if (cart.getCurrentDirection() == UP) {
-                    cart.setCurrentDirection(LEFT);
-                } else {
-                    throw new IllegalStateException("illegal state for cart: " + cart + " directions: " + directions);
+                switch (cart.getCurrentDirection()) {
+                    case LEFT:
+                        cart.setCurrentDirection(UP);
+                        break;
+                    case RIGHT:
+                        cart.setCurrentDirection(DOWN);
+                        break;
+                    case DOWN:
+                        cart.setCurrentDirection(RIGHT);
+                        break;
+                    case UP:
+                        cart.setCurrentDirection(LEFT);
+                        break;
+                    default:
+                        throw new IllegalStateException("illegal state for cart: " + cart + " directions: " + directions);
                 }
                 break;
             case CURVE_RIGHT:
-                if (cart.getCurrentDirection() == LEFT) {
-                    cart.setCurrentDirection(DOWN);
-                } else if (cart.getCurrentDirection() == RIGHT) {
-                    cart.setCurrentDirection(UP);
-                } else if (cart.getCurrentDirection() == DOWN) {
-                    cart.setCurrentDirection(LEFT);
-                } else if (cart.getCurrentDirection() == UP) {
-                    cart.setCurrentDirection(RIGHT);
-                } else {
-                    throw new IllegalStateException("illegal state for cart: " + cart + " directions: " + directions);
+                switch (cart.getCurrentDirection()) {
+                    case LEFT:
+                        cart.setCurrentDirection(DOWN);
+                        break;
+                    case RIGHT:
+                        cart.setCurrentDirection(UP);
+                        break;
+                    case DOWN:
+                        cart.setCurrentDirection(LEFT);
+                        break;
+                    case UP:
+                        cart.setCurrentDirection(RIGHT);
+                        break;
+                        default:
+                            throw new IllegalStateException("illegal state for cart: " + cart + " directions: " + directions);
                 }
                 break;
             case INTERSECTION:
