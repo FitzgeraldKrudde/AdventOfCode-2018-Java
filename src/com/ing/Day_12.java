@@ -113,13 +113,13 @@ public class Day_12 {
             Arrays.fill(noPlants, '.');
             newPlants.append(noPlants);
 
-            for (int rule = 0; rule < rules.length; rule++) {
-                String escapedRule = rules[rule].substring(0, rules[rule].length() - 1);
-                Pattern pattern = Pattern.compile(escapedRule, Pattern.LITERAL);
+            for (int r = 0; r < rules.length; r++) {
+                String rule = rules[r].substring(0, rules[r].length() - 1);
+                Pattern pattern = Pattern.compile(rule, Pattern.LITERAL);
                 Matcher matcher = pattern.matcher(plants);
                 int pos = 0;
                 while (matcher.find(pos)) {
-                    newPlants.setCharAt(matcher.start() + 2, rules[rule].charAt(5));
+                    newPlants.setCharAt(matcher.start() + 2, rules[r].charAt(5));
                     pos = matcher.start() + 1;
                 }
             }
