@@ -258,6 +258,7 @@ public class Day_17 {
 
         start = LocalTime.now();
 
+        System.out.println("#SETTLED_WATER = " + ground.countType(Ground.SETTLED_WATER));
 
         finish = LocalTime.now();
         System.out.println("duration (ms): " + Duration.between(start, finish).toMillis());
