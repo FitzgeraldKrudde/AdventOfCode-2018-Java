@@ -26,7 +26,7 @@ public class Day_6 {
         List<Point> points = readPoints(fileName);
 
         // create finite grid with the closest coordinate
-        List<AbstractMap.SimpleEntry<Point, String>> grid = createGridWithClosestCoordinate(points);
+        List<Map.Entry<Point, String>> grid = createGridWithClosestCoordinate(points);
 
         // determine all points at the edge i.e. which have infinite area
         List<String> edgeCoordinates = grid.stream()
@@ -74,7 +74,7 @@ public class Day_6 {
         System.out.println("duration (ms): " + Duration.between(start, finish).toMillis());
     }
 
-    private static List<AbstractMap.SimpleEntry<Point, String>> createGridWithClosestCoordinate(List<Point> points) {
+    private static List<Map.Entry<Point, String>> createGridWithClosestCoordinate(List<Point> points) {
         return IntStream.range(0, getMaxX(points))
                 .boxed()
                 .parallel()
@@ -114,14 +114,14 @@ public class Day_6 {
                 ).collect(Collectors.toList());
     }
 
-    private static List<AbstractMap.SimpleEntry<Point, String>> createGridWithMaximumDistances(List<Point> points, int maximumDistance) {
+    private static List<Map.Entry<Point, String>> createGridWithMaximumDistances(List<Point> points, int maximumDistance) {
         return IntStream.range(0, getMaxX(points))
                 .boxed()
                 .parallel()
                 .flatMap(x -> IntStream.range(0, getMaxY(points))
                         .mapToObj(y -> {
                             // default is that point has greater than maximum distance i.e. '.'
-                            AbstractMap.SimpleEntry<Point, String> coordinate = new AbstractMap.SimpleEntry<>(new Point(x, y), ".");
+                            Map.Entry<Point, String> coordinate = new AbstractMap.SimpleEntry<>(new Point(x, y), ".");
 
                             // calculate total Manhattan distance for all points
                             int totalDistance = points.stream()
