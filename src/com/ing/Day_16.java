@@ -8,14 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.Duration;
 import java.time.LocalTime;
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
@@ -28,94 +21,97 @@ interface OpCode {
      * @return the register result
      */
     int[] apply(int inputA, int inputB, int inputC);
-
 }
 
 class Device {
     @Getter
-    static final int[] register = new int[]{0, 0, 0, 0};
+    public final Map<String, OpCode> operators = new TreeMap<>();
+    @Getter
+    public int registerAsInstructionPointer;
+    @Getter
+    int[] register;
 
-    public static void setRegister(int[] r) {
+    public Device(int nrRegisters) {
+        register = new int[nrRegisters];
+        clearRegister();
+
+        operators.put("addr", this::addr);
+        operators.put("addi", this::addi);
+        operators.put("mulr", this::mulr);
+        operators.put("muli", this::muli);
+        operators.put("banr", this::banr);
+        operators.put("bani", this::bani);
+        operators.put("borr", this::borr);
+        operators.put("bori", this::bori);
+        operators.put("setr", this::setr);
+        operators.put("seti", this::seti);
+        operators.put("gtir", this::gtir);
+        operators.put("gtri", this::gtri);
+        operators.put("gtrr", this::gtrr);
+        operators.put("eqir", this::eqir);
+        operators.put("eqri", this::eqri);
+        operators.put("eqrr", this::eqrr);
+    }
+
+    public void setRegister(int[] r) {
         System.arraycopy(r, 0, register, 0, r.length);
     }
 
-    public static void clearRegister() {
+    public void clearRegister() {
         Arrays.fill(register, 0);
     }
 
-    @Getter
-    public static final Map<String, OpCode> operators = new TreeMap<>() {
-        {
-            put("addr", Device::addr);
-            put("addi", Device::addi);
-            put("mulr", Device::mulr);
-            put("muli", Device::muli);
-            put("banr", Device::banr);
-            put("bani", Device::bani);
-            put("borr", Device::borr);
-            put("bori", Device::bori);
-            put("setr", Device::setr);
-            put("seti", Device::seti);
-            put("gtir", Device::gtir);
-            put("gtri", Device::gtri);
-            put("gtrr", Device::gtrr);
-            put("eqir", Device::eqir);
-            put("eqri", Device::eqri);
-            put("eqrr", Device::eqrr);
-        }
-    };
-
-    public static int[] addr(int a, int b, int c) {
+    public int[] addr(int a, int b, int c) {
         register[c] = register[a] + register[b];
         return register;
     }
 
-    public static int[] addi(int a, int b, int c) {
+    public int[] addi(int a, int b, int c) {
         register[c] = register[a] + b;
         return register;
     }
 
-    public static int[] mulr(int a, int b, int c) {
+    public int[] mulr(int a, int b, int c) {
         register[c] = register[a] * register[b];
         return register;
     }
 
-    public static int[] muli(int a, int b, int c) {
+    public int[] muli(int a, int b, int c) {
         register[c] = register[a] * b;
         return register;
     }
 
-    public static int[] banr(int a, int b, int c) {
+    public int[] banr(int a, int b, int c) {
         register[c] = register[a] & register[b];
         return register;
     }
 
-    public static int[] bani(int a, int b, int c) {
+    public int[] bani(int a, int b, int c) {
         register[c] = register[a] & b;
         return register;
     }
 
-    public static int[] borr(int a, int b, int c) {
+    public int[] borr(int a, int b, int c) {
         register[c] = register[a] | register[b];
         return register;
     }
 
-    public static int[] bori(int a, int b, int c) {
+    public int[] bori(int a, int b, int c) {
         register[c] = register[a] | b;
         return register;
     }
 
-    public static int[] setr(int a, int b, int c) {
+    public int[] setr(int a, int b, int c) {
         register[c] = register[a];
         return register;
     }
 
-    public static int[] seti(int a, int b, int c) {
+    public int[] seti(int a, int b, int c) {
         register[c] = a;
         return register;
     }
 
-    public static int[] gtir(int a, int b, int c) {
+    public int[] gtir(int a, int b, int c) {
         if (a > register[b]) {
             register[c] = 1;
         } else {
@@ -124,7 +120,7 @@ class Device {
         return register;
     }
 
-    public static int[] gtri(int a, int b, int c) {
+    public int[] gtri(int a, int b, int c) {
         if (register[a] > b) {
             register[c] = 1;
         } else {
@@ -133,7 +129,7 @@ class Device {
         return register;
     }
 
-    public static int[] gtrr(int a, int b, int c) {
+    public int[] gtrr(int a, int b, int c) {
         if (register[a] > register[b]) {
             register[c] = 1;
         } else {
@@ -142,7 +138,7 @@ class Device {
         return register;
     }
 
-    public static int[] eqir(int a, int b, int c) {
+    public int[] eqir(int a, int b, int c) {
         if (a == register[b]) {
             register[c] = 1;
         } else {
@@ -151,7 +147,7 @@ class Device {
         return register;
     }
 
-    public static int[] eqri(int a, int b, int c) {
+    public int[] eqri(int a, int b, int c) {
         if (register[a] == b) {
             register[c] = 1;
         } else {
@@ -160,13 +156,54 @@ class Device {
         return register;
     }
 
-    public static int[] eqrr(int a, int b, int c) {
+    public int[] eqrr(int a, int b, int c) {
         if (register[a] == register[b]) {
             register[c] = 1;
         } else {
             register[c] = 0;
         }
         return register;
+    }
+
+    public int[] setRegisterToUseForInstructionPointer(int a, int b, int c) {
+        registerAsInstructionPointer = a;
+        return register;
+    }
+
+    public void executeProgram(Program inputProgram) {
+        // read register to use as instruction pointer
+        Statement statement = inputProgram.getStatements().get(0);
+        setRegisterToUseForInstructionPointer(statement.getArguments()[0], 0, 0);
+
+        // clone statements to use
+        List<Statement> listStatements = (List<Statement>) ((ArrayList) inputProgram.getStatements()).clone();
+        listStatements.remove(0);
+
+        long counter = 0;
+        while (true) {
+            // verify instruction pointer pointing to valid program instruction
+            if (validInstructionPointer(register[registerAsInstructionPointer], listStatements)) {
+                statement = listStatements.get(register[registerAsInstructionPointer]);
+                OpCode operation = operators.get(statement.getOperation());
+                operation.apply(statement.getArguments()[0], statement.getArguments()[1], statement.getArguments()[2]);
+            } else {
+                throw new IllegalStateException(String.format("instruction pointer %d outside program (line 0..%d): ", register[registerAsInstructionPointer], inputProgram.getStatements().size()));
+            }
+            register[registerAsInstructionPointer]++;
+            counter++;
+            if (counter % 10000000 == 0) {
+                System.out.println("counter = " + counter);
+            } else if (counter % 100000 == 0) {
+                System.out.print(".");
+            }
+        }
+    }
+
+    private boolean validInstructionPointer(int instructionPointer, List<Statement> listStatements) {
+        if (instructionPointer < 0) {
+            return false;
+        }
+        return instructionPointer < listStatements.size();
     }
 }
 
@@ -177,9 +214,19 @@ class Sample {
     private int[] after;
 }
 
+@Data
+class Statement {
+    private String operation;
+    private int[] arguments;
+}
+
+@Data
+class Program {
+    List<Statement> statements = new ArrayList<>();
+}
+
 public class Day_16 {
 
-    private static final int TOTAL_NUMBER_OF_OPCODES = 16;
     private static String FILENAME = "input_16.txt";
 
     public static void main(String[] args) throws IOException {
@@ -220,10 +267,12 @@ public class Day_16 {
             }
         }
 
+        Device device = new Device(4);
+
         long countSamplesWith3OrMoreOpCodes = lSamples.stream()
-                .filter(s -> Device.getOperators().values().stream()
+                .filter(s -> device.getOperators().values().stream()
                         .filter(oper -> {
-                            Device.setRegister(s.getBefore());
+                            device.setRegister(s.getBefore());
                             return Arrays.equals(
                                     oper.apply(s.getInstruction()[1],
                                             s.getInstruction()[2], s.getInstruction()[3]), s.getAfter());
@@ -245,9 +294,9 @@ public class Day_16 {
 
         Map<Integer, List<OpCode>> mapOpCodeNrToOperations =
                 lSamples.stream()
-                        .flatMap(s -> Device.getOperators().values().stream()
+                        .flatMap(s -> device.getOperators().values().stream()
                                 .filter(oper -> {
-                                    Device.setRegister(s.getBefore());
+                                    device.setRegister(s.getBefore());
                                     return Arrays.equals(oper.apply(s.getInstruction()[1], s.getInstruction()[2], s.getInstruction()[3]), s.getAfter());
                                 })
                                 .map(oper -> new AbstractMap.SimpleEntry<>(s.getInstruction()[0], oper))
@@ -261,7 +310,7 @@ public class Day_16 {
         mapOpCodeNrToOperation.get().entrySet().stream()
                 .forEach(resultLine -> System.out.println("resultLine = " + resultLine));
 
-        // read test program
+        // read test statements
         List<int[]> program = new ArrayList<>();
         int nrBlankLines = 0;
         final int NEEDED_NR_OF_CONSECUTIVE_BLANK_LINES = 3;
@@ -280,20 +329,20 @@ public class Day_16 {
                 nrBlankLines = 0;
             }
         }
-        System.out.println(String.format("read test program: #%d lines", program.size()));
+        System.out.println(String.format("read test statements: #%d lines", program.size()));
 
-        // run test program
+        // run test statements
         int[] register;
         OpCode opcode;
-        Device.clearRegister();
+        device.clearRegister();
         for (int i = 0; i < program.size(); i++) {
             int[] line = program.get(i);
             opcode = mapOpCodeNrToOperation.get().get(line[0]);
             opcode.apply(line[1], line[2], line[3]);
-            register = Device.getRegister();
+            register = device.getRegister();
             System.out.println(String.format("#%03d register: [%d, %d, %d, %d]", i, register[0], register[1], register[2], register[3]));
         }
-        register = Device.getRegister();
+        register = device.getRegister();
         System.out.println("\nregister[0] = " + register[0]);
 
         finish = LocalTime.now();
