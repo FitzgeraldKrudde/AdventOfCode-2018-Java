@@ -2,6 +2,7 @@ package com.ing;
 
 import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -27,9 +28,16 @@ class Device {
     @Getter
     public final Map<String, OpCode> operators = new TreeMap<>();
     @Getter
+    @Setter
     public int registerAsInstructionPointer;
     @Getter
+    @Setter
+    long maxInstructionsToExecute = Long.MAX_VALUE;
+    @Getter
     int[] register;
+    @Getter
+    @Setter
+    boolean printDebugging = false;
 
     public Device(int nrRegisters) {
         register = new int[nrRegisters];
@@ -165,29 +173,26 @@ class Device {
         return register;
     }
 
-    public int[] setRegisterToUseForInstructionPointer(int a, int b, int c) {
-        registerAsInstructionPointer = a;
-        return register;
-    }
-
     public void executeProgram(Program inputProgram) {
-        // read register to use as instruction pointer
-        Statement statement = inputProgram.getStatements().get(0);
-        setRegisterToUseForInstructionPointer(statement.getArguments()[0], 0, 0);
-
+        Statement statement;
         // clone statements to use
-        List<Statement> listStatements = (List<Statement>) ((ArrayList) inputProgram.getStatements()).clone();
-        listStatements.remove(0);
+        List<Statement> listStatements = inputProgram.getStatements();
 
         long counter = 0;
-        while (true) {
+        while (counter < maxInstructionsToExecute) {
             // verify instruction pointer pointing to valid program instruction
             if (validInstructionPointer(register[registerAsInstructionPointer], listStatements)) {
                 statement = listStatements.get(register[registerAsInstructionPointer]);
+                if (printDebugging) {
+                    System.out.print("ip=" + register[registerAsInstructionPointer] + " " + Arrays.toString(register) + " " + statement.getOperation() + " " + Arrays.toString(statement.getArguments()));
+                }
                 OpCode operation = operators.get(statement.getOperation());
                 operation.apply(statement.getArguments()[0], statement.getArguments()[1], statement.getArguments()[2]);
+                if (printDebugging) {
+                    System.out.println(" " + Arrays.toString(register));
+                }
             } else {
-                throw new IllegalStateException(String.format("instruction pointer %d outside program (line 0..%d): ", register[registerAsInstructionPointer], inputProgram.getStatements().size()));
+                throw new IllegalStateException(String.format("instruction pointer %d outside program (line 0..%d), executed #instructions: %d  ", register[registerAsInstructionPointer], inputProgram.getStatements().size() - 1, counter));
             }
             register[registerAsInstructionPointer]++;
             counter++;

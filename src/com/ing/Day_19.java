@@ -18,30 +18,27 @@ public class Day_19 {
     public static void main(String[] args) throws IOException {
         LocalTime start = LocalTime.now();
 
+        // create a device with 6 registers and the instruction pointer operation
+        Device device = new Device(6);
+
         // read samples from input lines: remove empty lines
         List<String> inputLines = new ArrayList<>(readFile(args));
 
         // read program
         Program program = new Program();
-        Statement statement;
         for (String line : inputLines.stream()
                 .filter(l -> l.trim().length() > 0)
                 .collect(toList())) {
             String[] words = line.split(" ");
-            statement = new Statement();
-            statement.setOperation(words[0]);
             if ("#ip".equals(words[0])) {
-                statement.setArguments(new int[]{Integer.valueOf(words[1]), 0, 0});
+                device.setRegisterAsInstructionPointer(Integer.valueOf(words[1]));
             } else {
+                Statement statement = new Statement();
+                statement.setOperation(words[0]);
                 statement.setArguments(new int[]{Integer.valueOf(words[1]), Integer.valueOf(words[2]), Integer.valueOf(words[3])});
+                program.getStatements().add(statement);
             }
-
-            program.getStatements().add(statement);
         }
-
-        // create a device with 6 registers and the instruction pointer operation
-        Device device = new Device(6);
-        device.operators.put("sip", device::setRegisterToUseForInstructionPointer);
 
         try {
             device.executeProgram(program);
@@ -63,6 +60,8 @@ public class Day_19 {
         Arrays.fill(r, 0);
         r[0] = 1;
         device.setRegister(r);
+        device.setMaxInstructionsToExecute(25);
+        device.setPrintDebugging(true);
         try {
             device.executeProgram(program);
         } catch (IllegalStateException e) {
