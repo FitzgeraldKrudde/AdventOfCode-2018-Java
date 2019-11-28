@@ -36,15 +36,36 @@ class Square implements Comparable {
             return y - other.y;
         }
     }
+
+    Square nextSquare(Direction d) {
+        return switch (d) {
+            case W -> new Square(x - 1, y);
+            case E -> new Square(x + 1, y);
+            case S -> new Square(x, y + 1);
+            case N -> new Square(x, y - 1);
+        };
+    }
+
+    Square nextSquare(char d) {
+        return nextSquare(Direction.valueOf(String.valueOf(d)));
+    }
+
+    enum Direction {
+        N,
+        S,
+        E,
+        W;
+    }
+
 }
+
 
 @ToString(callSuper = true)
 @Getter
 @Setter
 class Combatant extends Square {
-    public final char id = 'X';
     public final static int HITPOINTS = 200;
-
+    public final char id = 'X';
     int attackPower = 3;
     int hitPoints = HITPOINTS;
     boolean killed = false;
@@ -96,10 +117,9 @@ class CombatArea {
     public final char GOBLIN = 'G';
     @ToString.Exclude
     public final char ELF = 'E';
-
-    private char[][] combatArea;
     List<Elf> elfs = new ArrayList<>();
     List<Goblin> goblins = new ArrayList<>();
+    private char[][] combatArea;
     private int elfAttackPower = 3;
 
     public CombatArea(int x, int y) {

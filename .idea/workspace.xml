@@ -1,254 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cce5f00e-94f8-4a3b-9f6e-6ef3d720f73d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cce5f00e-94f8-4a3b-9f6e-6ef3d720f73d" name="Default Changelist" comment="finished almost a year later ;) using recursion, pretty elegant">
+      <change afterPath="$PROJECT_DIR$/input_20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ing/Day_20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ing/Day_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ing/Day_15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ing/Day_16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ing/Day_16.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ing/Day_19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ing/Day_19.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="880932578">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="54" />
-          <entry key="java" value="18929" />
-          <entry key="txt" value="385" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="18929" />
-          <entry key="PLAIN_TEXT" value="439" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="html" value="1" />
-          <entry key="iml" value="3" />
-          <entry key="input" value="1" />
-          <entry key="java" value="71" />
-          <entry key="properties" value="1" />
-          <entry key="tst" value="1" />
-          <entry key="txt" value="7" />
-          <entry key="xml" value="10" />
-          <entry key="xt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="HTML" value="1" />
-          <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="71" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="10" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ing/Day_8.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="119" column="45" lean-forward="true" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ing/Day_7.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>flatMap</find>
-      <find>IntSTream</find>
-      <find>flatmap</find>
-      <find>comparingInt</find>
-      <find>boxed</find>
-      <find>grouping</find>
-      <find>Max</find>
-      <find>reac</find>
-      <find>tomap</find>
-      <find>SimpleEntry</find>
-      <find>.collect(toMap(</find>
-      <find>.map(</find>
-      <find>SimpleE</find>
-      <find>entrySet</find>
-      <find>baseWaittime</find>
-      <find>System.</find>
-      <find>&quot;.&quot;</find>
-      <find>switch</find>
-      <find>enum</find>
-      <find>Instan</find>
-      <find>start = new Date().getTime();</find>
-      <find>new Date().getTime()</find>
-      <find>long start</find>
-      <find>long finish</find>
-      <find>+ duration)</find>
-      <find>long duration = finish - start;\n</find>
-      <find>+ Duration.between(start, finish).toMillis()</find>
-      <find>duration = finish - start;\n</find>
-      <find>System.o</find>
-      <find>result:</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>LocalTime start = LocalTime.now();</replace>
-      <replace>LocalTime.now()</replace>
-      <replace>LocalTime start</replace>
-      <replace>LocalTime finish</replace>
-      <replace>+ Duration.between(start, finish).toMillis())</replace>
-      <replace />
-      <replace>IDLE</replace>
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="$PROJECT_DIR$/input_3.txt" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_3_1.java" />
-        <option value="$PROJECT_DIR$/input_4.txt" />
-        <option value="$PROJECT_DIR$/src/input_5.xt" />
-        <option value="$PROJECT_DIR$/input_5.txt" />
-        <option value="$PROJECT_DIR$/input_6.txt" />
-        <option value="$PROJECT_DIR$/input_7.txt" />
-        <option value="$PROJECT_DIR$/input_8.txt" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_1_1.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_1_2.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_2_1.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_2_2.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_3.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_4.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_5.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_6.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_7.java" />
-        <option value="$PROJECT_DIR$/src/com/ing/Day_8.java" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="53" />
-    <option name="width" value="1680" />
-    <option name="height" value="947" />
-  </component>
+  <component name="ProjectId" id="1OW6f082agACYBwrEZ8JyBNFvvi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <autoscrollFromSource ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ing" type="462c0819:PsiDirectoryNode" />
-              <item name="Day_2_2.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ing" type="462c0819:PsiDirectoryNode" />
-              <item name="Day_4.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ing" type="462c0819:PsiDirectoryNode" />
-              <item name="Day_7.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ing" type="462c0819:PsiDirectoryNode" />
-              <item name="Day_8.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544281033101" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548103919961" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ing" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/com/ing" />
@@ -262,21 +77,9 @@
       <recent name="$PROJECT_DIR$/src/com/ing" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Day_8">
-    <configuration name="Day_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ing.Day_4" />
+  <component name="RunManager" selected="Application.Day_20">
+    <configuration name="Day_16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ing.Day_16" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -288,8 +91,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ing.Day_5" />
+    <configuration name="Day_19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ing.Day_19" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -301,8 +104,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ing.Day_6" />
+    <configuration name="Day_20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="13" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.ing.Day_20" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -314,8 +119,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day_7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ing.Day_7" />
+    <configuration name="Day_2_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ing.Day_2_2" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -327,8 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day_8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ing.Day_8" />
+    <configuration name="ConstructionTest.calculateEndpoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -336,26 +140,45 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.ing" />
+      <option name="MAIN_CLASS_NAME" value="com.ing.ConstructionTest" />
+      <option name="METHOD_NAME" value="calculateEndpoint" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Day_4" />
-      <item itemvalue="Application.Day_5" />
-      <item itemvalue="Application.Day_6" />
-      <item itemvalue="Application.Day_7" />
-      <item itemvalue="Application.Day_8" />
+      <item itemvalue="Application.Day_19" />
+      <item itemvalue="Application.Day_20" />
+      <item itemvalue="Application.Day_2_2" />
+      <item itemvalue="Application.Day_16" />
+      <item itemvalue="JUnit.ConstructionTest.calculateEndpoint" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Day_8" />
-        <item itemvalue="Application.Day_7" />
-        <item itemvalue="Application.Day_6" />
-        <item itemvalue="Application.Day_5" />
-        <item itemvalue="Application.Day_4" />
+        <item itemvalue="Application.Day_20" />
+        <item itemvalue="JUnit.ConstructionTest.calculateEndpoint" />
+        <item itemvalue="Application.Day_19" />
+        <item itemvalue="Application.Day_16" />
+        <item itemvalue="Application.Day_2_2" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -365,6 +188,33 @@
       <option name="presentableId" value="Default" />
       <updated>1543655629002</updated>
       <workItem from="1543655633161" duration="225794000" />
+      <workItem from="1544521704356" duration="5022000" />
+      <workItem from="1544538814432" duration="60959000" />
+      <workItem from="1546704693503" duration="24000" />
+      <workItem from="1546704746271" duration="29895000" />
+      <workItem from="1546983849214" duration="45617000" />
+      <workItem from="1547411940366" duration="34290000" />
+      <workItem from="1548363312299" duration="2837000" />
+      <workItem from="1553035390159" duration="13000" />
+      <workItem from="1553035449074" duration="598000" />
+      <workItem from="1553546907283" duration="33000" />
+      <workItem from="1553851989272" duration="13000" />
+      <workItem from="1553852028857" duration="46000" />
+      <workItem from="1553852140291" duration="35000" />
+      <workItem from="1553852202894" duration="608000" />
+      <workItem from="1554138148097" duration="1215000" />
+      <workItem from="1555876148751" duration="599000" />
+      <workItem from="1556113882449" duration="1199000" />
+      <workItem from="1563219697409" duration="73000" />
+      <workItem from="1563219827162" duration="27000" />
+      <workItem from="1563219878174" duration="14000" />
+      <workItem from="1563219932796" duration="611000" />
+      <workItem from="1564080882860" duration="112000" />
+      <workItem from="1564081107823" duration="69000" />
+      <workItem from="1565519320228" duration="60000" />
+      <workItem from="1574107835197" duration="876000" />
+      <workItem from="1574108932959" duration="56962000" />
+      <workItem from="1574973130732" duration="869000" />
     </task>
     <task id="LOCAL-00001" summary="first day, first lambdas">
       <created>1544278994169</created>
@@ -443,52 +293,108 @@
       <option name="project" value="LOCAL" />
       <updated>1544280892322</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="easy one, used primitive arrays and some easy lambda's">
+      <created>1544545445118</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544545445119</updated>
+    </task>
+    <task id="LOCAL-00013" summary="(renamed 10-&gt;11 ..) easy one, used primitive arrays and some easy lambda's">
+      <created>1544545910571</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544545910571</updated>
+    </task>
+    <task id="LOCAL-00014" summary="nice exercise: used some lambda's and some creativity for recognising letters">
+      <created>1544571224592</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544571224592</updated>
+    </task>
+    <task id="LOCAL-00015" summary="nice exercise: used some lambda's and some creativity for recognising letters">
+      <created>1544571325739</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544571325739</updated>
+    </task>
+    <task id="LOCAL-00016" summary="day12: funny, learned some Java Pattern corner cases ;)">
+      <created>1544631668890</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544631668890</updated>
+    </task>
+    <task id="LOCAL-00017" summary="max dimension 3000-&gt;300 (accidently committed larger number)">
+      <created>1544635850720</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1544635850720</updated>
+    </task>
+    <task id="LOCAL-00018" summary="removed peek (testing)">
+      <created>1544636002920</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1544636002920</updated>
+    </task>
+    <task id="LOCAL-00019" summary="day 14, no extra classes, clean and simple..">
+      <created>1544794861097</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1544794861097</updated>
+    </task>
+    <task id="LOCAL-00020" summary="day 14, no extra classes, clean and simple..">
+      <created>1544795591669</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1544795591669</updated>
+    </task>
+    <task id="LOCAL-00021" summary="(better variable naming) day 12, funny, learned some Java Pattern corner cases ;)">
+      <created>1544796889269</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1544796889269</updated>
+    </task>
+    <task id="LOCAL-00022" summary="made Device more generic for Day 19">
+      <created>1546805490927</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1546805490927</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Day 19, part 1 working. Part 2 needs some other approach..">
+      <created>1546805614866</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1546805614866</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225794000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="947" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.24969475" />
-      <window_info id="Structure" order="1" sideWeight="0.5008157" side_tool="true" weight="0.24969475" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32881355" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26322114" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41346154" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.328125" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3377404" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Cargo" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first day, first lambdas" />
@@ -502,7 +408,47 @@
     <MESSAGE value="creating Stream in flatmap and my first custom Collector" />
     <MESSAGE value="tricky one, used clean recursion and a few lambda's" />
     <MESSAGE value="IntelliJ stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="IntelliJ stuff" />
+    <MESSAGE value="easy one, used primitive arrays and some easy lambda's" />
+    <MESSAGE value="(renamed 10-&gt;11 ..) easy one, used primitive arrays and some easy lambda's" />
+    <MESSAGE value="nice exercise: used some lambda's and some creativity for recognising letters" />
+    <MESSAGE value="day12: funny, learned some Java Pattern corner cases ;)" />
+    <MESSAGE value="max dimension 3000-&gt;300 (accidently committed larger number)" />
+    <MESSAGE value="removed peek (testing)" />
+    <MESSAGE value="day 14, no extra classes, clean and simple.." />
+    <MESSAGE value="(better variable naming) day 12, funny, learned some Java Pattern corner cases ;)" />
+    <MESSAGE value="made Device more generic for Day 19" />
+    <MESSAGE value="Day 19, part 1 working. Part 2 needs some other approach.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 19, part 1 working. Part 2 needs some other approach.." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="655" y="270" width="639" height="517" key="#Project_Structure" timestamp="1574973451187">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="655" y="270" width="639" height="517" key="#Project_Structure/0.0.1920.1055@0.0.1920.1055" timestamp="1574973451187" />
+    <state width="1886" height="223" key="GridCell.Tab.0.bottom" timestamp="1574973311809">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1886" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1055@0.0.1920.1055" timestamp="1574973311809" />
+    <state width="1886" height="223" key="GridCell.Tab.0.center" timestamp="1574973311809">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1886" height="223" key="GridCell.Tab.0.center/0.0.1920.1055@0.0.1920.1055" timestamp="1574973311809" />
+    <state width="1886" height="223" key="GridCell.Tab.0.left" timestamp="1574973311809">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1886" height="223" key="GridCell.Tab.0.left/0.0.1920.1055@0.0.1920.1055" timestamp="1574973311809" />
+    <state width="1886" height="223" key="GridCell.Tab.0.right" timestamp="1574973311809">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1886" height="223" key="GridCell.Tab.0.right/0.0.1920.1055@0.0.1920.1055" timestamp="1574973311809" />
+    <state width="373" height="438" key="SwitcherDM" timestamp="1574973286253">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="373" height="438" key="SwitcherDM/0.0.1920.1055@0.0.1920.1055" timestamp="1574973286253" />
+    <state x="713" y="393" key="com.intellij.ide.util.TipDialog" timestamp="1574973133202">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="713" y="393" key="com.intellij.ide.util.TipDialog/0.0.1920.1055@0.0.1920.1055" timestamp="1574973133202" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -510,20 +456,62 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ing/Day_2_2.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ing/Day_6.java</url>
           <line>170</line>
-          <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ing/Day_8.java</url>
           <line>76</line>
-          <properties />
           <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_11.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_10.java</url>
+          <line>233</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_10.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_12.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_12.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_14.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_19.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_19.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_19.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/ing/Day_7.java</url>
@@ -533,456 +521,23 @@
           </properties>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="81" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="100" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="104" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="109" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.4/lombok-1.18.4.jar!/lombok/ToString.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="244" column="8" selection-start-line="244" selection-start-column="8" selection-end-line="244" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Objects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="371" column="33" selection-start-line="371" selection-start-column="33" selection-end-line="371" selection-end-column="33" />
-          <folding>
-            <element signature="e#13877#13878#0" expanded="true" />
-            <element signature="e#13945#13946#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_3.txt.tst">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/time/Instant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="206" column="19" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/regex/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4452">
-          <caret line="775" column="19" selection-start-line="775" selection-start-column="19" selection-end-line="775" selection-end-column="19" />
-          <folding>
-            <element signature="e#54758#54759#0" expanded="true" />
-            <element signature="e#54802#54803#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="2316" column="29" selection-start-line="2316" selection-start-column="29" selection-end-line="2316" selection-end-column="29" />
-          <folding>
-            <element signature="e#94325#94326#0" expanded="true" />
-            <element signature="e#94363#94364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="1558" column="26" selection-start-line="1558" selection-start-column="26" selection-end-line="1558" selection-end-column="26" />
-          <folding>
-            <element signature="e#6336#6337#0" expanded="true" />
-            <element signature="e#6404#6405#0" expanded="true" />
-            <element signature="e#55960#55961#0" expanded="true" />
-            <element signature="e#56017#56018#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="549" column="13" selection-start-line="549" selection-start-column="13" selection-end-line="549" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
-          <folding>
-            <element signature="e#2837#2838#0" expanded="true" />
-            <element signature="e#2866#2867#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/time/LocalDateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="1065" column="25" selection-start-line="1065" selection-start-column="25" selection-end-line="1065" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12045">
-          <caret line="803" column="30" selection-start-line="803" selection-start-column="30" selection-end-line="803" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/StringBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="137" column="11" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
-          <folding>
-            <element signature="e#5111#5112#0" expanded="true" />
-            <element signature="e#5142#5143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Spliterators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="174" column="37" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="5632" column="44" lean-forward="true" selection-start-line="5632" selection-start-column="44" selection-end-line="5632" selection-end-column="44" />
-          <folding>
-            <element signature="e#249870#249871#0" expanded="true" />
-            <element signature="e#249923#249924#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/geom/Point2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="9990" column="22" selection-start-line="9990" selection-start-column="22" selection-end-line="9990" selection-end-column="22" />
-          <folding>
-            <element signature="e#395563#395564#0" expanded="true" />
-            <element signature="e#395610#395611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdventOfCode.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/BaseStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1162">
-          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/IntStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1552">
-          <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/Collectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3527">
-          <caret line="1652" column="23" selection-start-line="1652" selection-start-column="23" selection-end-line="1652" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="405" column="14" selection-start-line="405" selection-start-column="14" selection-end-line="405" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/TreeSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
-          <folding>
-            <element signature="e#4716#4717#0" expanded="true" />
-            <element signature="e#4753#4754#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/AbstractMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="618" column="15" selection-start-line="618" selection-start-column="15" selection-end-line="618" selection-end-column="15" />
-          <folding>
-            <element signature="e#21504#21505#0" expanded="true" />
-            <element signature="e#21540#21541#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="735" column="12" selection-start-line="735" selection-start-column="12" selection-end-line="735" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_7.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="94" column="37" lean-forward="true" selection-end-line="100" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_1_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_1_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_2_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_2_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="173" column="31" selection-start-line="173" selection-start-column="31" selection-end-line="173" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1108">
-          <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="1186" column="31" selection-start-line="1186" selection-start-column="31" selection-end-line="1186" selection-end-column="31" />
-          <folding>
-            <element signature="e#56709#56710#0" expanded="true" />
-            <element signature="e#56753#56754#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/description.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/project-template.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/org_projectlombok_lombok_1_18_4.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="119" column="45" lean-forward="true" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ing/Day_7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.11.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>AdventOfCode</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>org.projectlombok:lombok:1.18.4</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
