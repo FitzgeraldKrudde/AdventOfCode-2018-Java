@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cce5f00e-94f8-4a3b-9f6e-6ef3d720f73d" name="Default Changelist" comment="finished almost a year later ;) using recursion, pretty elegant">
+    <list default="true" id="cce5f00e-94f8-4a3b-9f6e-6ef3d720f73d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/ing/Day_21.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ing/Day_16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ing/Day_16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ing/Day_19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ing/Day_19.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,14 +54,22 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ing" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/src/com/ing" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ing" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -70,29 +79,8 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/com/ing" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ing" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/src/com/ing" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.Day_20">
-    <configuration name="Day_16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ing.Day_16" />
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Day_21">
     <configuration name="Day_19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ing.Day_19" />
       <module name="AdventOfCode" />
@@ -121,8 +109,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day_2_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ing.Day_2_2" />
+    <configuration name="Day_21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ing.Day_21" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ing.Day_3" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -153,17 +154,17 @@
     <list>
       <item itemvalue="Application.Day_19" />
       <item itemvalue="Application.Day_20" />
-      <item itemvalue="Application.Day_2_2" />
-      <item itemvalue="Application.Day_16" />
       <item itemvalue="JUnit.ConstructionTest.calculateEndpoint" />
+      <item itemvalue="Application.Day_21" />
+      <item itemvalue="Application.Day_3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day_21" />
+        <item itemvalue="Application.Day_3" />
         <item itemvalue="Application.Day_20" />
         <item itemvalue="JUnit.ConstructionTest.calculateEndpoint" />
         <item itemvalue="Application.Day_19" />
-        <item itemvalue="Application.Day_16" />
-        <item itemvalue="Application.Day_2_2" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +217,7 @@
       <workItem from="1565519320228" duration="60000" />
       <workItem from="1574107835197" duration="876000" />
       <workItem from="1574108932959" duration="56962000" />
-      <workItem from="1574973130732" duration="1581000" />
+      <workItem from="1574973130732" duration="37091000" />
     </task>
     <task id="LOCAL-00001" summary="first day, first lambdas">
       <created>1544278994169</created>
@@ -386,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574974103567</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="smoothened CPU device">
+      <created>1574975836566</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1574975836566</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,45 +436,90 @@
     <MESSAGE value="made Device more generic for Day 19" />
     <MESSAGE value="Day 19, part 1 working. Part 2 needs some other approach.." />
     <MESSAGE value="finished almost a year later ;) using recursion, pretty elegant and also using Java13 and cool switch expression" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished almost a year later ;) using recursion, pretty elegant and also using Java13 and cool switch expression" />
+    <MESSAGE value="smoothened CPU device" />
+    <option name="LAST_COMMIT_MESSAGE" value="smoothened CPU device" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="655" y="270" width="639" height="517" key="#Project_Structure" timestamp="1574973451187">
+    <state x="655" y="270" width="639" height="517" key="#Project_Structure" timestamp="1575135807964">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state x="655" y="270" width="639" height="517" key="#Project_Structure/0.0.1920.1055@0.0.1920.1055" timestamp="1574973451187" />
-    <state x="400" y="149" width="1358" height="799" key="CommitChangelistDialog2" timestamp="1574974103404">
+    <state x="655" y="270" width="639" height="517" key="#Project_Structure/0.0.1920.1055@0.0.1920.1055" timestamp="1575135807964" />
+    <state x="422" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575207786692">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state x="400" y="149" width="1358" height="799" key="CommitChangelistDialog2/0.0.1920.1055@0.0.1920.1055" timestamp="1574974103404" />
-    <state width="1886" height="223" key="GridCell.Tab.0.bottom" timestamp="1574973311809">
+    <state x="422" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1055@0.0.1920.1055" timestamp="1575207786692" />
+    <state x="400" y="149" width="1358" height="799" key="CommitChangelistDialog2" timestamp="1575230639462">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state width="1886" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1055@0.0.1920.1055" timestamp="1574973311809" />
-    <state width="1886" height="223" key="GridCell.Tab.0.center" timestamp="1574973311809">
+    <state x="400" y="149" width="1358" height="799" key="CommitChangelistDialog2/0.0.1920.1055@0.0.1920.1055" timestamp="1575230639462" />
+    <state x="796" y="299" width="320" height="459" key="FileChooserDialogImpl" timestamp="1574975863975">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state width="1886" height="223" key="GridCell.Tab.0.center/0.0.1920.1055@0.0.1920.1055" timestamp="1574973311809" />
-    <state width="1886" height="223" key="GridCell.Tab.0.left" timestamp="1574973311809">
+    <state x="796" y="299" width="320" height="459" key="FileChooserDialogImpl/0.0.1920.1055@0.0.1920.1055" timestamp="1574975863975" />
+    <state width="1886" height="361" key="GridCell.Tab.0.bottom" timestamp="1575229971604">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state width="1886" height="223" key="GridCell.Tab.0.left/0.0.1920.1055@0.0.1920.1055" timestamp="1574973311809" />
-    <state width="1886" height="223" key="GridCell.Tab.0.right" timestamp="1574973311809">
+    <state width="1886" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1055@0.0.1920.1055" timestamp="1575229971604" />
+    <state width="1886" height="361" key="GridCell.Tab.0.center" timestamp="1575229971603">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state width="1886" height="223" key="GridCell.Tab.0.right/0.0.1920.1055@0.0.1920.1055" timestamp="1574973311809" />
-    <state width="373" height="438" key="SwitcherDM" timestamp="1574973286253">
+    <state width="1886" height="361" key="GridCell.Tab.0.center/0.0.1920.1055@0.0.1920.1055" timestamp="1575229971603" />
+    <state width="1886" height="361" key="GridCell.Tab.0.left" timestamp="1575229971603">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state width="373" height="438" key="SwitcherDM/0.0.1920.1055@0.0.1920.1055" timestamp="1574973286253" />
-    <state x="655" y="326" width="602" height="406" key="Vcs.Push.Dialog.v2" timestamp="1574974105974">
+    <state width="1886" height="361" key="GridCell.Tab.0.left/0.0.1920.1055@0.0.1920.1055" timestamp="1575229971603" />
+    <state width="1886" height="361" key="GridCell.Tab.0.right" timestamp="1575229971603">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state x="655" y="326" width="602" height="406" key="Vcs.Push.Dialog.v2/0.0.1920.1055@0.0.1920.1055" timestamp="1574974105974" />
+    <state width="1886" height="361" key="GridCell.Tab.0.right/0.0.1920.1055@0.0.1920.1055" timestamp="1575229971603" />
+    <state width="1886" height="361" key="GridCell.Tab.1.bottom" timestamp="1575229971605">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1886" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1055@0.0.1920.1055" timestamp="1575229971605" />
+    <state width="1886" height="361" key="GridCell.Tab.1.center" timestamp="1575229971604">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1886" height="361" key="GridCell.Tab.1.center/0.0.1920.1055@0.0.1920.1055" timestamp="1575229971604" />
+    <state width="1886" height="361" key="GridCell.Tab.1.left" timestamp="1575229971604">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1886" height="361" key="GridCell.Tab.1.left/0.0.1920.1055@0.0.1920.1055" timestamp="1575229971604" />
+    <state width="1886" height="361" key="GridCell.Tab.1.right" timestamp="1575229971604">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="1886" height="361" key="GridCell.Tab.1.right/0.0.1920.1055@0.0.1920.1055" timestamp="1575229971604" />
+    <state x="587" y="250" width="745" height="557" key="SettingsEditor" timestamp="1575019015971">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="587" y="250" width="745" height="557" key="SettingsEditor/0.0.1920.1055@0.0.1920.1055" timestamp="1575019015971" />
+    <state width="373" height="438" key="SwitcherDM" timestamp="1575230642609">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state width="373" height="438" key="SwitcherDM/0.0.1920.1055@0.0.1920.1055" timestamp="1575230642609" />
+    <state x="819" y="461" width="274" height="135" key="VCS.ChangelistChooser" timestamp="1575153162211">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="819" y="461" width="274" height="135" key="VCS.ChangelistChooser/0.0.1920.1055@0.0.1920.1055" timestamp="1575153162211" />
+    <state x="655" y="326" width="602" height="406" key="Vcs.Push.Dialog.v2" timestamp="1575230583524">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="655" y="326" width="602" height="406" key="Vcs.Push.Dialog.v2/0.0.1920.1055@0.0.1920.1055" timestamp="1575230583524" />
     <state x="713" y="393" key="com.intellij.ide.util.TipDialog" timestamp="1574973133202">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
     <state x="713" y="393" key="com.intellij.ide.util.TipDialog/0.0.1920.1055@0.0.1920.1055" timestamp="1574973133202" />
+    <state x="1103" y="345" width="395" height="384" key="extract.method.dialog" timestamp="1575216463660">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="1103" y="345" width="395" height="384" key="extract.method.dialog/0.0.1920.1055@0.0.1920.1055" timestamp="1575216463660" />
+    <state x="455" y="190" width="1089" height="701" key="find.popup" timestamp="1575196462862">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="455" y="190" width="1089" height="701" key="find.popup/0.0.1920.1055@0.0.1920.1055" timestamp="1575196462862" />
+    <state x="464" y="208" width="983" height="642" key="new project wizard" timestamp="1574975987960">
+      <screen x="0" y="0" width="1920" height="1055" />
+    </state>
+    <state x="464" y="208" width="983" height="642" key="new project wizard/0.0.1920.1055@0.0.1920.1055" timestamp="1574975987960" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -530,6 +583,11 @@
           <url>file://$PROJECT_DIR$/src/com/ing/Day_19.java</url>
           <line>57</line>
           <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ing/Day_21.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/ing/Day_7.java</url>
