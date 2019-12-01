@@ -38,6 +38,22 @@ class Device {
     @Getter
     @Setter
     boolean printDebugging = false;
+    @Getter
+    @Setter
+    boolean checkDay21Condition = false;
+    @Getter
+    long day21Part1Output = -1;
+    @Getter
+    long day21Part2Output = -1;
+    @Getter
+    @Setter
+    boolean day21PartTwo = false;
+    @Getter
+    @Setter
+    int day21InstructionNr = -1;
+    @Getter
+    @Setter
+    int registerWhichGetsComparedWithRegister0;
 
     public Device(int nrRegisters) {
         register = new int[nrRegisters];
@@ -177,30 +193,66 @@ class Device {
         Statement statement;
         // clone statements to use
         List<Statement> listStatements = inputProgram.getStatements();
+        List<Long> day21Part2Candidates = new ArrayList<>();
 
         long counter = 0;
         while (counter < maxInstructionsToExecute) {
             // verify instruction pointer pointing to valid program instruction
             if (validInstructionPointer(register[registerAsInstructionPointer], listStatements)) {
                 statement = listStatements.get(register[registerAsInstructionPointer]);
-                if (printDebugging) {
-                    System.out.print("ip=" + register[registerAsInstructionPointer] + " " + Arrays.toString(register) + " " + statement.getOperation() + " " + Arrays.toString(statement.getArguments()));
-                }
+                preDebugLog(statement);
                 OpCode operation = operators.get(statement.getOperation());
                 operation.apply(statement.getArguments()[0], statement.getArguments()[1], statement.getArguments()[2]);
-                if (printDebugging) {
-                    System.out.println(" " + Arrays.toString(register));
-                }
+                postDebugLog();
             } else {
                 throw new IllegalStateException(String.format("instruction pointer %d outside program (line 0..%d), executed #instructions: %d  ", register[registerAsInstructionPointer], inputProgram.getStatements().size() - 1, counter));
             }
+
+            // day 21 stuff
+            if (checkDay21Condition) {
+                if (day21Condition()) {
+                    day21Part1Output = register[registerWhichGetsComparedWithRegister0];
+                    if (day21PartTwo) {
+                        if (day21Part2Candidates.contains(day21Part1Output)) {
+                            System.out.println("#day21Part2Candidates = " + day21Part2Candidates.size());
+                            day21Part2Output = day21Part2Candidates.get(day21Part2Candidates.size() - 1);
+                            return;
+                        } else {
+                            day21Part2Candidates.add(day21Part1Output);
+                        }
+                    } else {
+                        return;
+                    }
+                }
+            }
             register[registerAsInstructionPointer]++;
             counter++;
-            if (counter % 10000000 == 0) {
-                System.out.println("counter = " + counter);
-            } else if (counter % 100000 == 0) {
-                System.out.print(".");
-            }
+            progressLog(counter);
+        }
+    }
+
+    private boolean day21Condition() {
+        if (register[registerAsInstructionPointer] == day21InstructionNr) {
+            return true;
+        }
+        return false;
+    }
+
+    private void postDebugLog() {
+        if (printDebugging) {
+            System.out.println(" " + Arrays.toString(register));
+        }
+    }
+
+    private void preDebugLog(Statement statement) {
+        if (printDebugging) {
+            System.out.print("ip=" + register[registerAsInstructionPointer] + " " + Arrays.toString(register) + " " + statement.getOperation() + " " + Arrays.toString(statement.getArguments()));
+        }
+    }
+
+    private void progressLog(long counter) {
+        if (counter % (1000 * 1000 * 100) == 0) {
+            System.out.print(".");
         }
     }
 
